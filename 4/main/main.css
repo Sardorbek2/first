@@ -1,0 +1,237 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.visually__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", "sans-serif";
+    font-size: 18px;
+    line-height: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+ /* barlow-regular - latin */
+ @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+.container{
+    width: 1300px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__link{
+    color: #83888F;
+    text-decoration: none;
+    font-family: "Barlow";
+    padding-left: 30px;
+}
+
+.header__link:hover, :focus{
+    color: black;
+    text-decoration: line-through;
+}
+
+/* hero */
+.hero__list{
+    background-image: url(../img/Group7.png);
+    background-repeat: no-repeat;
+    width: 1280px;
+    height: 450px;
+    list-style: none;
+}
+
+.hero__item{
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+.hero__heading{
+    color: #FEFCF7;
+    font-size: 40px;
+    font-family: "Fraunces 9pt";
+}
+
+.hero__text{
+    color: #FEFCF7;
+    width: 400px;
+    font-family: "Barlow";
+}
+
+/* nav */
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+
+.nav__text{
+    width: 540px;
+    color: #333D4B;
+    font-family: "Barlow";
+    font-size: 16px;
+}
+
+.nav__item:nth-child(2){
+    padding-left: 100px;
+    padding-top: 60px;
+}
+
+.nav__heading2{
+    color: #333D4B;
+    font-family: "Fraunces 9pt";
+    font-size: 40px;
+}
+
+/* you */
+.you{
+    margin-top: 100px;
+}
+
+.you__list{
+    display: flex;
+    background-color: #333D4B;
+    height: 474px;
+    list-style: none;
+}
+
+.you__text{
+    width: 540px;
+    color: #FEFCF7;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.you__item:nth-child(2){
+    margin-left: 230px;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 700px;
+}
+
+.you__item:nth-child(1){
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.you__heading2{
+    color: #FEFCF7;
+    font-family: "Fraunces";
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+}
+
+.come__list:nth-child(2){
+    display: flex;
+    list-style: none;
+}
+
+.come__item{
+    padding-left: 95px;
+}
+
+.come__heading3{
+    color: #333D4B;
+    font-family: "Fraunces 9pt";
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.come__text{
+    color: #333D4B;
+    font-family: "Barlow";
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.come__heading2{
+    margin-left: 95px;
+    margin-bottom: 72px;
+    color: #83888F;
+    font-family: "Fraunces 9pt";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+.come__list{
+    list-style: none;
+}
+
+.come{
+    margin-top: 100px;
+    margin-left: 240px;
+}
+
+.footer{
+    background-color: #2C343E;
+}
+
+.footer__link{
+    color: #83888F;
+    text-decoration: none;
+    padding-left: 30px;
+    font-family: "Barlow"
+}
+
+.footer__link:hover{
+    color: #FEFCF7;
+    text-decoration: line-through;
+}
